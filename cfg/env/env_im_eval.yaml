@@ -1,0 +1,33 @@
+task: MyoLegs Imitation
+
+# ===== Simulation =====
+sim_timestep_inv: 150
+control_frequency_inv: 5
+
+# ===== Control =====
+kp_scale: 1.0
+kd_scale: 1.0
+clip_actions: True
+
+# ===== Rewards (eval parity with train) =====
+reward_specs:
+  k_pos: 200
+  k_vel: 5
+  k_energy: 0.05
+
+  w_pos: 0.6
+  w_vel: 0.25
+  w_upright: 0.10
+
+  w_energy_human: 0.10
+  w_exo_energy: 0.20
+  w_exo_smooth: 0.10
+
+  w_assist_pos: 0.10
+  w_assist_neg: 0.20
+  assist_vel_deadzone: 0.2
+  assist_vel_scale: 8.0
+
+# ===== Task =====
+resampling_interval: 100
+termination_distance: 0.50   # 放宽，便于可视化

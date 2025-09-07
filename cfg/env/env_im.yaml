@@ -1,0 +1,42 @@
+# cfg/env/env_im.yaml
+# Environment-level parameters that affect physics/rewards
+sim_timestep_inv: 150         # 1/Δt, e.g., 1000 => Δt=0.001s
+control_frequency_inv: 5       # Apply action every N sim steps (200 Hz / 5 => 40 Hz)
+kp_scale: 1.0
+kd_scale: 1.0
+
+# Task-related
+termination_distance: 0.5
+resampling_interval: 60
+clip_actions: true
+action_clip: 1.0
+
+
+reward_specs:
+  # —— 模仿权重（可先保持温和，后续再调）——
+  "w_pos": 0.6
+  "w_vel": 0.2
+  "w_upright": 0.1
+  "w_energy": 0.1
+
+  # —— 论文风格的 exo 三项：r_m / r_as / r_tau —— 
+  "w_m": 0.08           # 肌功代理权重（主驱动）
+  "sigma_m": 1.0
+
+  "w_as": 0.15         # 二阶平滑奖励
+  "sigma_as": 0.25     # 越大越严格，先取温和值
+
+  "w_tau": 0.02        # 扭矩代价奖励（太大易“僵”）
+  "sigma_tau": 0.1    # 你现在 r_tau = exp(-sigma_tau * tau_cost_norm)
+
+  # —— 人体能耗的指数整形参数（compute_energy_reward 用到）——
+  "k_pos": 50        # ← 关键：降尺度
+  "k_vel": 0.5
+  "k_energy": 0.05
+
+  # —— 外骨骼扭矩：低通 + 斜率限幅 + 全局缩放（与你代码匹配）——
+  "exo_torque_lp_alpha": 0.30  # 0 关；0.2~0.4 较合适
+  "exo_rate_limit": 0.10       # 单步最大变化幅度（占额定量程的比例）
+  "exo_torque_scale": 0.10     # 统一缩放（再叠加 exo_scale curriculum）
+
+

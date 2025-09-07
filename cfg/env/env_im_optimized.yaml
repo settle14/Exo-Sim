@@ -1,0 +1,27 @@
+# Optimized environment configuration
+# Default experiment name
+task: MyoLegs Imitation
+
+# Simulation Configs
+sim_timestep_inv: 150
+control_frequency_inv: 5
+
+# Control Configs
+kp_scale: 1.0
+kd_scale: 1.0
+clip_actions: True
+
+# Optimized reward configuration
+reward_specs:
+  "k_pos": 200      # Much higher position reward
+  "k_vel": 5       # Much higher velocity reward  
+  "k_energy": 0.05  # Lower energy penalty to encourage movement
+  
+  "w_pos": 0.6      # Higher position weight
+  "w_vel": 0.2     # Velocity weight
+  "w_upright": 0.1 # Lower upright weight (since it was already good)
+  "w_energy": 0.1   # Remove energy penalty completely
+
+#### Task Configs
+resampling_interval: 100    # More frequent resampling
+termination_distance: 0.5  # Stricter termination for better learning

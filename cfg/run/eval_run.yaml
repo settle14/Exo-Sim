@@ -1,0 +1,32 @@
+motion_id: 0
+im_eval: True
+test: True
+headless: True
+num_threads: 32
+fast_forward: True
+num_motions: 500
+random_start: False
+
+control_mode: "PD"
+random_sample: False
+
+proprioceptive_inputs:
+  ["root_height","root_tilt","local_body_pos","local_body_rot","local_body_vel","local_body_ang_vel","feet_contacts","exo_torque","exo_vel"]
+
+task_inputs: ["diff_local_body_pos","diff_local_vel","local_ref_body_pos"]
+
+xml_path: "data/xml/myolegs_exo.xml"
+motion_file: "data/kit_test_motion_dict.pkl"
+smpl_data_dir: "data/smpl"
+initial_pose_file: "data/initial_pose/initial_pose_test.pkl"
+expert_path: ""
+
+use_exo_in_action: true
+exo_actuators: [exo_knee_r, exo_knee_l, exo_hip_r, exo_hip_l]  # 若无髋部，请删去后两项
+
+# AB 对照
+exo_eval_both: true
+# 单次评估可切换：+run.exo_zero=True/False
+
+recording_biomechanics: False
+deactivate_muscles: False

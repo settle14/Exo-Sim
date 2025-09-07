@@ -1,0 +1,37 @@
+motion_id: 0
+im_eval: False
+test: False
+headless: True
+num_threads: 32
+fast_forward: True
+num_motions: 1000
+random_start: True
+
+control_mode: "PD"
+random_sample: False
+
+# 观测（保持与评估一致）
+proprioceptive_inputs:
+  ["root_height","root_tilt","local_body_pos","local_body_rot","local_body_vel","local_body_ang_vel","feet_contacts","exo_torque","exo_vel"]
+
+task_inputs: ["diff_local_body_pos","diff_local_vel","local_ref_body_pos"]
+
+# 外骨骼 XML + 执行器
+xml_path: "data/xml/myolegs_exo.xml"
+motion_file: "data/kit_train_motion_dict.pkl"
+smpl_data_dir: "data/smpl"
+initial_pose_file: "data/initial_pose/initial_pose_train.pkl"
+expert_path: ""
+
+use_exo_in_action: true
+exo_zero: false                 # 训练时启用外骨骼
+exo_actuators: [exo_knee_r, exo_knee_l, exo_hip_r, exo_hip_l]  # 若无髋部，请删去后两项
+
+
+recording_biomechanics: False
+deactivate_muscles: False
+
+run:
+  exo_scale_start: 0.0      # 训练从“无外骨骼影响”起步
+  exo_scale_end:   1.0      # 最终全量
+  exo_scale_warmup_eps: 800 # 多少个 episode 内线性爬升
