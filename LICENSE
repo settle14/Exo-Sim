@@ -1,6 +1,6 @@
 BSD 3-Clause License
 
-Copyright (c) 2025 Chenglong Zhai
+Copyright (c) 2025 CHENGLONG ZHAI
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -13,8 +13,11 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Third-Party Licenses
-This project includes code from or is based on the following third-party sources, which are licensed under their respective terms:
+===============================================================================
+UPSTREAM AND THIRD-PARTY LICENSES
+===============================================================================
+
+This project is based on and includes code from the following sources:
 
 Kinesis (https://github.com/amathislab/Kinesis)
 Copyright (c) 2025 Mathis Group for Computational Neuroscience and AI, EPFL
@@ -45,7 +48,27 @@ PyTorch-RL (https://github.com/Khrylx/PyTorch-RL)
 Copyright (c) 2020 Ye Yuan
 Licensed under MIT License
 
-For complete license texts of third-party components, please refer to their respective repositories or the THIRD_PARTY_LICENSES file in this project.
+For complete license texts of third-party components, please refer to their respective repositories or the original KINESIS project documentation.
 
+===============================================================================
 DISCLAIMER
-This is a research project based on the Kinesis framework for exoskeleton simulation and reinforcement learning. The modifications and extensions made by Chenglong Zhai are intended for academic research and educational purposes. Users are responsible for ensuring compliance with all applicable third-party licenses when using or distributing this software.
+===============================================================================
+This is a research project based on the Kinesis framework for exoskeleton simulation and reinforcement learning. The modifications and extensions made by CHENGLONG ZHAI are intended for academic research and educational purposes. Users are responsible for ensuring compliance with all applicable third-party licenses when using or distributing this software.
+
+===============================================================================
+ATTRIBUTION REQUIREMENTS
+===============================================================================
+
+When using this software in academic research, please cite:
+
+1. The original KINESIS project and related publications from the Mathis Lab
+2. This derivative work: "Exoskeleton-Assisted Human Motion Simulation and Analysis" by CHENGLONG ZHAI
+3. Relevant third-party dependencies as listed above
+
+===============================================================================
+MESH ASSETS AND DATA
+===============================================================================
+
+This software may require mesh assets (SMPL body models) that are subject to separate licensing terms. Please refer to MESH_DOWNLOAD_INSTRUCTIONS.md for information on obtaining required assets and their respective licenses.
+
+The SMPL body model is available under specific academic/research licenses. Commercial use may require separate licensing agreements with the original authors.
