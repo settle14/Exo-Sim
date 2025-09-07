@@ -236,7 +236,7 @@ If you use this code for your research, please cite:
 ```bibtex
 @misc{exo_kinesis_2025,
   title={Exoskeleton-Assisted Human Locomotion Analysis using Kinesis Framework},
-  author={Your Name},
+  author={CHENGLONG ZHAI},
   year={2025},
   url={https://github.com/your-username/kinesis-exo}
 }
