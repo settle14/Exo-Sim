@@ -1,7 +1,6 @@
 BSD 3-Clause License
 
-Copyright (c) 2025 Mathis Group for Computational Neuroscience and AI, EPFL
-Copyright (c) 2025 Chenglong Zhai and contributors
+Copyright (c) 2025 Chenglong Zhai
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -14,46 +13,39 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-----
-
 Third-Party Licenses
+This project includes code from or is based on the following third-party sources, which are licensed under their respective terms:
 
-This project includes or adapts code from third-party projects that are distributed under their respective licenses. See THIRD_PARTY_NOTICES.md for details and full texts where required (e.g., Apache-2.0).
-# Third-Party Notices
+Kinesis (https://github.com/amathislab/Kinesis)
+Copyright (c) 2025 Mathis Group for Computational Neuroscience and AI, EPFL
+Licensed under BSD 3-Clause License
 
-This repository builds on KINESIS and includes/adapts code from the following projects. Each item lists the license and a link to the original repository. When required by the license (e.g., Apache-2.0), the full text is included under `third_party/`.
+SMPLSim (https://github.com/ZhengyiLuo/SMPLSim)
+Copyright (c) 2024 Zhengyi Luo
+Licensed under BSD 3-Clause License
 
-## KINESIS (upstream)
-- Copyright (c) 2025 Mathis Group for Computational Neuroscience and AI, EPFL
-- License: BSD 3-Clause
+PHC (https://github.com/ZhengyiLuo/PHC)
+Copyright (c) 2023 Carnegie Mellon University
+Copyright (c) 2018-2023, NVIDIA Corporation
+Licensed under BSD 3-Clause License
 
-## SMPLSim
-- https://github.com/ZhengyiLuo/SMPLSim
-- License: BSD 3-Clause  
-- Copyright (c) 2024 Zhengyi Luo
+IsaacGymEnvs (https://github.com/isaac-sim/IsaacGymEnvs)
+Copyright (c) 2018-2023, NVIDIA Corporation
+Licensed under BSD 3-Clause License
 
-## PHC
-- https://github.com/ZhengyiLuo/PHC
-- License: BSD 3-Clause  
-- Copyright (c) 2023 Carnegie Mellon University  
-- Copyright (c) 2018–2023 NVIDIA Corporation
+myo_sim (https://github.com/MyoHub/myo_sim)
+Copyright 2020 Vikash Kumar, Vittorio Caggiano, Huawei Wang
+Licensed under Apache License Version 2.0
 
-## IsaacGymEnvs
-- https://github.com/isaac-sim/IsaacGymEnvs
-- License: BSD 3-Clause  
-- Copyright (c) 2018–2023 NVIDIA Corporation
+SPIN (https://github.com/nkolot/SPIN)
+Copyright (c) 2019, University of Pennsylvania, Max Planck Institute for Intelligent Systems
+Licensed under BSD 3-Clause License
 
-## myo_sim
-- https://github.com/MyoHub/myo_sim
-- License: Apache License 2.0  
-- **Full text required** → placed at `third_party/apache-2.0.txt`
+PyTorch-RL (https://github.com/Khrylx/PyTorch-RL)
+Copyright (c) 2020 Ye Yuan
+Licensed under MIT License
 
-## SPIN
-- https://github.com/nkolot/SPIN
-- License: BSD 3-Clause  
-- Copyright (c) 2019, University of Pennsylvania, Max Planck Institute for Intelligent Systems
+For complete license texts of third-party components, please refer to their respective repositories or the THIRD_PARTY_LICENSES file in this project.
 
-## PyTorch-RL
-- https://github.com/Khrylx/PyTorch-RL
-- License: MIT  
-- Copyright (c) 2020 Ye Yuan
+DISCLAIMER
+This is a research project based on the Kinesis framework for exoskeleton simulation and reinforcement learning. The modifications and extensions made by Chenglong Zhai are intended for academic research and educational purposes. Users are responsible for ensuring compliance with all applicable third-party licenses when using or distributing this software.
