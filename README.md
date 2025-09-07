@@ -259,7 +259,7 @@ We welcome contributions! Please:
 ## 📞 Support
 
 - **Issues**: [GitHub Issues](your-repo-issues-link)
-- **Email**: [your-email@university.edu]
+- **Email**: [zhaichenglong0514@163.com]
 - **Original Kinesis**: [amathislab/Kinesis](https://github.com/amathislab/Kinesis)
 
 ## 🙏 Acknowledgments
